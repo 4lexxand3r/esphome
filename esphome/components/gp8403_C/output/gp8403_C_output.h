@@ -8,7 +8,7 @@
 namespace esphome {
 namespace gp8403_C {
 
-class gp8403_COutput : public Component, public output::FloatOutput, public Parented<gp8403_C> {
+class GP8403_COutput : public Component, public output::FloatOutput, public Parented<gp8403_C> {
  public:
   void dump_config() override;
   float get_setup_priority() const override { return setup_priority::DATA - 1; }
