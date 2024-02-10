@@ -3,12 +3,12 @@
 #include "esphome/components/output/float_output.h"
 #include "esphome/core/component.h"
 
-#include "esphome/components/gp8403_2/gp8403_2.h"
+#include "esphome/components/GP8403_C/GP8403_C.h"
 
 namespace esphome {
-namespace gp8403_2 {
+namespace GP8403_C {
 
-class gp8403_2Output : public Component, public output::FloatOutput, public Parented<gp8403_2> {
+class GP8403_COutput : public Component, public output::FloatOutput, public Parented<GP8403_C> {
  public:
   void dump_config() override;
   float get_setup_priority() const override { return setup_priority::DATA - 1; }
@@ -21,5 +21,5 @@ class gp8403_2Output : public Component, public output::FloatOutput, public Pare
   uint8_t channel_;
 };
 
-}  // namespace gp8403_2
+}  // namespace GP8403_C
 }  // namespace esphome

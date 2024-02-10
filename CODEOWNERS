@@ -120,7 +120,7 @@ esphome/components/ft5x06/* @clydebarrow
 esphome/components/ft63x6/* @gpambrozio
 esphome/components/gcja5/* @gcormier
 esphome/components/globals/* @esphome/core
-esphome/components/gp8403_2/* @jesserockz
+esphome/components/GP8403_C/* @jesserockz
 esphome/components/gpio/* @esphome/core
 esphome/components/gps/* @coogle
 esphome/components/graph/* @synco
