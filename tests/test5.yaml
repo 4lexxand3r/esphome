@@ -234,10 +234,10 @@ tlc5947:
     allow_other_uses: true
     number: GPIO15
 
-gp8403:
-  - id: gp8403_5v
+gp8403_2:
+  - id: gp8403_2_5v
     voltage: 5V
-  - id: gp8403_10v
+  - id: gp8403_2_10v
     voltage: 10V
 
 output:
@@ -277,13 +277,13 @@ output:
     id: Led7
     led: 7
 
-  - platform: gp8403
-    id: gp8403_output_0
-    gp8403_id: gp8403_5v
+  - platform: gp8403_2
+    id: gp8403_2_output_0
+    gp8403_2_id: gp8403_2_5v
     channel: 0
-  - platform: gp8403
-    gp8403_id: gp8403_10v
-    id: gp8403_output_1
+  - platform: gp8403_2
+    gp8403_2_id: gp8403_2_10v
+    id: gp8403_2_output_1
     channel: 1
 
 demo:
