@@ -8,22 +8,22 @@ CODEOWNERS = ["@jesserockz"]
 DEPENDENCIES = ["i2c"]
 MULTI_CONF = True
 
-GP8403_2_ns = cg.esphome_ns.namespace("GP8403_2")
-GP8403_2 = GP8403_2_ns.class_("GP8403_2", cg.Component, i2c.I2CDevice)
+gp8403_2_ns = cg.esphome_ns.namespace("gp8403_2")
+gp8403_2 = gp8403_2_ns.class_("gp8403_2", cg.Component, i2c.I2CDevice)
 
-GP8403_2Voltage = GP8403_2_ns.enum("GP8403_2Voltage")
+gp8403_2Voltage = gp8403_2_ns.enum("gp8403_2Voltage")
 
-CONF_GP8403_2_ID = "GP8403_2_id"
+CONF_gp8403_2_ID = "gp8403_2_id"
 
 VOLTAGES = {
-    "5V": GP8403_2Voltage.GP8403_2_VOLTAGE_5V,
-    "10V": GP8403_2Voltage.GP8403_2_VOLTAGE_10V,
+    "5V": gp8403_2Voltage.gp8403_2_VOLTAGE_5V,
+    "10V": gp8403_2Voltage.gp8403_2_VOLTAGE_10V,
 }
 
 CONFIG_SCHEMA = (
     cv.Schema(
         {
-            cv.GenerateID(): cv.declare_id(GP8403_2),
+            cv.GenerateID(): cv.declare_id(gp8403_2),
             cv.Required(CONF_VOLTAGE): cv.enum(VOLTAGES, upper=True),
         }
     )
